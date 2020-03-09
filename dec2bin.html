@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <title>BeeShard - Decimal to binary</title>
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome/all.css">
+    <link rel="stylesheet" href="./assets/css/listing/pagination.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+</head>
+<body>
+    <script>
+       $(function() {
+            $('#header').load('./assets/html/header.html')
+        });
+    </script>
+    <header id="header"></header>
+    <main class="container main__content">
+        <div class="page__header">
+            <div class="row">
+                <h1 class="page__title">Decimal to binary</h1>
+            </div>
+        </div>
+        <!-- Search -->
+        <section class="panel__default">
+            <form>
+                <div class="panel__form--top">
+                    <div class="row">
+                        <div class="form__group col-md-12">
+                            <label class="label" for="result">Decimal</label>
+                            <input id="form-input" type="text" class="input__default" name="form-input" maxlength="69">
+                            <span class="error__alert">Invalid character!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel__form--bottom">
+                    <div class="row justify-content-end">
+                        <button id="swap-button" type="button" class="button__form" onclick="location.href='bin2dec.html'"><i class="fas fa-sync-alt mr-2"></i>Swap</button>
+                        <button id="reset-button" type="button" class="button__form"><i class="fas fa-times mr-2 icon__small"></i></i>Reset</button>
+                        <button id="convert-button" type="button" class="button__form" disabled><i class="fas fa-exchange-alt mr-2"></i>Convert</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="panel__default">
+            <div class="panel__form--top">
+                <div class="row" style="position: relative">
+                    <div class="form__group col-md-12">
+                        <label class="label" for="input-name">Binary</label>
+                        <input id="result-input" type="text" class="input__default" readonly>
+                        <span class="tooltiptext hide" id="myTooltip">Copied!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/copy.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

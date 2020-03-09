@@ -1,0 +1,216 @@
+// 1. Colors
+// --------------------------------------------------
+$dark-gray: #575757;
+$gray: #787878;
+$light-gray : #adb8be;
+$white: #fff;
+$white-gray: #fafafa;
+// 2. Spaces 
+// --------------------------------------------------
+$space-none: 0rem;
+$space-xxxs: 0.25rem;
+$space-xxs: 0.5rem;
+$space-xs: 0.8rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2rem;
+$space-xl: 2.5rem;
+$space-xxl: 3rem;
+$space-xxxl: 4rem;
+$space-title-grid : 1.1rem;
+// 3. Typography 
+// --------------------------------------------------
+$roboto: Roboto,Arial Helvetica,Sans-serif;
+$roboto-thin: RobotoThin,Arial Helvetica,Sans-serif;
+// ==================================================
+body {
+    background: $white-gray;
+    font-family: $roboto;
+    padding-top: $space-xxl;
+}
+
+dl, dd, dt {
+    margin: $space-none;
+    font-size: $space-xs;
+    font-weight: normal;
+}
+dl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+dt {
+    padding-right: 0.4rem;
+}
+dd {
+    padding-right: 1.2rem;
+}
+.shadow {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+// Texto
+.page__title {
+    font-family: $roboto-thin;
+    padding-bottom: $space-xs;
+    padding-left: $space-lg;
+    font-size: $space-xl;
+}
+.section__title {
+    color: $dark-gray; 
+    margin-bottom: $space-md;
+}
+// Estrutura
+.main__content {
+    padding-top: $space-xxl; 
+    padding-bottom: $space-xxl;
+}
+.section__top {
+    background: $dark-gray;
+    border-radius: $space-xxs $space-xxs $space-none $space-none;
+    padding: $space-xxl $space-xxl $space-lg $space-xxl;
+}
+.section__middle {
+    border-radius: $space-xxs $space-xxs;
+    padding: $space-lg;
+}
+.section__bottom {
+    background: $dark-gray;
+    border-radius: $space-none $space-none $space-xxs $space-xxs;
+    padding: $space-lg $space-xxl $space-sm $space-xxl;
+    background: $gray;
+    height: auto;
+}
+// Formulário
+.form__section {
+    padding-bottom: $space-xxl;
+}
+.form__row {
+    padding-bottom: $space-lg;
+}
+.form__group {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: $space-none $space-sm;
+}
+.label {
+    color: $light-gray;
+    font-size: $space-xs;
+    font-weight: 500;
+}
+.label__edit {
+    color: $gray;
+    font-size: $space-xs;
+    font-weight: 500;
+}
+.input {
+    background: $dark-gray;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $gray;
+    color: $white;
+    display: block;
+    width: 100%;
+}
+.input__edit {
+    background: $white;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $gray;
+    color: $white;
+    display: block;
+    width: 100%;
+}
+.button__submit {
+    background: $dark-gray;
+    border: 1px solid $gray;
+    color: $white;
+    margin-right: $space-sm;
+    padding: $space-xs $space-lg;
+}
+.button__submit--edit {
+    background: $white;
+    border: 1px solid $gray;
+    color: $gray;
+    margin-right: $space-sm;
+    padding: $space-xs $space-lg;
+}
+.button__create {
+    background: $gray;
+    border: 0;
+    box-shadow: none;
+    color: $white;
+    font-size: $space-sm;
+    text-transform: uppercase;
+}
+// Listagem
+.listing__filters {
+    padding-bottom: $space-lg;
+}
+.grid__item {
+    background: $white;
+    border-radius: $space-xxxs;
+    color: $dark-gray;
+    padding: $space-md;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.item__title {
+    font-size: $space-title-grid;
+}
+.item__icon {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: $space-md;
+}
+.item__data {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+}
+.item__actions {
+    position: absolute;
+    right: $space-sm;
+    top: $space-xxs;
+    z-index: 2;
+}
+.action__delete {
+    font-size: 1.3rem;
+}
+.item__actions > div {
+    cursor: pointer;
+}
+// Icone
+.title__icon {
+    font-size: $space-lg;
+    margin-left: $space-lg;
+    margin-top: $space-xxs;
+}
+.grid__icon {
+    font-size: $space-md;
+}
+.button__icon {
+    margin-right: $space-xxs;
+    color: $white;
+}
+
+
+
+
+
+
+
+
+
+
+/* Fonte */
+@font-face {
+    font-family: "RobotoThin";
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
