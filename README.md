@@ -14,6 +14,6 @@ Converter is the second step in the javascript career
 ## Implementation
 In this project I used:
 * Javascript 
-* [CSS convention BEM] (http://getbem.com/introduction/)
-* [Bootstrap 4] (https://getbootstrap.com/) 
-* [Font Awesome] (https://fontawesome.com/)
+* [CSS convention BEM](http://getbem.com/introduction/)
+* [Bootstrap 4](https://getbootstrap.com/) 
+* [Font Awesome](https://fontawesome.com/)
