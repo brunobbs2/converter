@@ -1,6 +1,6 @@
 body {
   background: #dddce1;
-  font-family: Roboto, Arial Helvetica, Sans-serif;
+  font-family: Arial Helvetica, Sans-serif;
 }
 
 dl, dd, dt {
@@ -321,17 +321,5 @@ dd {
 #convert-button {
   opacity: 0.5;
 }
-/* Font */
-@font-face {
-  font-family: "RobotoThin";
-  src: url(../fonts/Roboto-Thin.ttf); }
-@font-face {
-  font-family: "Roboto";
-  src: url(../fonts/Roboto-Regular.ttf); }
-@font-face {
-font-family: "RobotoLight";
-src: url(../fonts/Roboto-Light.ttf); }
-@font-face {
-  font-family: "Nunito";
-  src: url(../fonts/NunitoSans-Regular.ttf); }
+
   

@@ -5,19 +5,13 @@
     <meta http-equiv="Cache-Control" content="no-store" />
     <title>BeeShard - Binary to decimal</title>
     <!-- CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/fontawesome/all.css">
-    <link rel="stylesheet" href="./assets/css/listing/pagination.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="./src/assets/css/reset.css">
+    <link rel="stylesheet" href="./src/lib/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./src/lib/css/fontawesome/all.css">
     <!-- JS -->
-    <script src="./assets/js/jquery-3.4.1.min.js"></script>
-    <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <script src="./src/lib/js/jquery-3.4.1.min.js"></script>
+    <script src="./src/lib/js/bootstrap/bootstrap.js"></script>
 </head>
 <body>
     <main class="container main__content">
@@ -26,13 +20,12 @@
                 <h1 class="page__title">Binary to decimal</h1>
             </div>
         </div>
-        <!-- Search -->
         <section class="panel__default">
-            <form>
+            <form onsubmit="converterController.submit();">
                 <div class="panel__form--top">
                     <div class="row">
                         <div class="form__group col-md-12">
-                            <label class="label" for="result">Binary</label>
+                            <label id="form-label" class="label" for="result">Binary</label>
                             <input id="form-input" type="text" class="input__default" name="form-input" maxlength="69">
                             <span class="error__alert">Invalid character!</span>
                         </div>
@@ -42,7 +35,7 @@
                     <div class="row justify-content-end">
                         <button id="swap-button" type="button" class="button__form" onclick="location.href='dec2bin.html'"><i class="fas fa-sync-alt mr-2"></i>Swap</button>
                         <button id="reset-button" type="button" class="button__form"><i class="fas fa-times mr-2 icon__small"></i></i>Reset</button>
-                        <button id="convert-button" type="button" class="button__form" disabled><i class="fas fa-exchange-alt mr-2"></i>Convert</button>
+                        <button id="convert-button" type="submit" class="button__form" ><i class="fas fa-exchange-alt mr-2"></i>Convert</button>
                     </div>
                 </div>
             </form>
@@ -51,7 +44,7 @@
             <div class="panel__form--top">
                 <div class="row" style="position: relative">
                     <div class="form__group col-md-12">
-                        <label class="label" for="input-name">Decimal</label>
+                        <label id="result-label" class="label" for="input-name">Decimal</label>
                         <input id="result-input" type="text" class="input__default" readonly>
                         <span class="tooltiptext hide" id="myTooltip">Copied!</span>
                     </div>
@@ -59,7 +52,13 @@
             </div>
         </section>
     </main>
-    <script src="./assets/js/copy.js"></script>
-    <script src="./assets/js/binary2decimal.js"></script>
+    <!-- <script src="./assets/js/copy.js"></script> -->
+    <!-- <script src="./assets/js/binary2decimal.js"></script> -->
+    <script src="src/js/models/ConverterModel.js"></script>
+    <script src="src/js/controllers/ConverterController.js"></script>
+    <script src="src/js/views/ConverterView.js"></script>
+    <script>
+        let converterController = new ConverterController();
+    </script>
 </body>
 </html>
