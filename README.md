@@ -15,5 +15,5 @@ Converter is the second step in the javascript career
 In this project I used:
 * Javascript 
 * [CSS convention BEM](http://getbem.com/introduction/)
-* [Bootstrap 4](https://getbootstrap.com/) 
+* [Bootstrap](https://getbootstrap.com/) 
 * [Font Awesome](https://fontawesome.com/)
