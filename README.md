@@ -8,4 +8,12 @@ Converter cab be accessed through the URL [converter.beeshard.com](http://conver
 
 
 ### Javascript career
-Converter is the second project in the javascript career and can be accessed through the URL converter.beeshard.com
+Converter is the second step in the javascript career
+![Image of Project](https://github.com/brunobbs2/javascript-career/blob/master/roadmap.png)
+
+## Implementation
+In this project I used:
+* Javascript 
+* [CSS convention BEM] (http://getbem.com/introduction/)
+* [Bootstrap 4] (https://getbootstrap.com/) 
+* [Font Awesome] (https://fontawesome.com/)
