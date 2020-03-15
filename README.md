@@ -9,7 +9,7 @@ Converter cab be accessed through the URL [converter.beeshard.com](http://conver
 
 ### Javascript career
 Converter is the second step in the javascript career
-![Image of Project](https://github.com/brunobbs2/javascript-career/blob/master/roadmap.png)
+![Image of Project](https://github.com/brunobbs2/converter/blob/master/assets/img/roadmap.png)
 
 ## Implementation
 In this project I used:
