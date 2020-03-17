@@ -1,11 +1,11 @@
 class ConverterView {
 
-    constructor(inputForm, inputResult, buttonSubmit, spanError, isBinary) {
+    constructor(inputForm, buttonSubmit, spanError, labelForm, labelResult) {
         this._inputForm = inputForm;
-        this._inputResult = inputResult;
         this._buttonSubmit = buttonSubmit;
         this._spanError = spanError;
-        this._isBinary = isBinary;
+        this._labelForm = labelForm;
+        this._labelResult = labelResult;
     }
 
     validateBinary(inputForm) {
@@ -18,10 +18,6 @@ class ConverterView {
         } else {
             toggleElements(true);
         }
-    }
-
-    validateDecimal(inputForm) {
-
     }
 
     toggleElements(toggle) {
@@ -38,9 +34,10 @@ class ConverterView {
         }
     }
 
-    swapConverter(oldType, newType, isBinary) {
-        this._isBinary = isBinary;
+    swapConverter(oldType, newType) {
         this._labelForm = newType;
         this._labelResult = oldType;
     }
+
+    this._inputForm.addEventListener('input',validateBinary(this));
 }

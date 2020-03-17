@@ -7,26 +7,29 @@ class ConverterController {
         this._spanError = document.querySelector('.error__alert');
         this._labelForm = document.querySelector('#form-label');
         this._labelResult = document.querySelector('#result-label');
-        this._isBinary = true;
+        this._swap = false;
 
         this._converterView = new ConverterView(
             this._inputForm,
-            this._labelResult,
-            this._buttonSubmit, 
+            this._buttonSubmit,
             this._spanError,
-            this._isBinary
+            this._labelForm,
+            this._labelResult,
         );
     }
 
     
     submit() {
         event.preventDefault();
-        let converter = new ConverterModel(this._inputForm.value, this._isBinary);
+        
+        let converter = new ConverterModel(
+            this._inputForm.value
+        );
 
-        if (converter.getIsBinary()) {
-            this._inputResult.value = converter.getValue();
+        if (!this._swap) {
+            this._inputResult.value = parseInt(converter.getValue(), 2).toString();
         } else {
-
+            
         }
     }
 
@@ -36,10 +39,14 @@ class ConverterController {
     }
 
     swap() {
-        if (this._isBinary) {
-            this._converterView.swapConverter(false, "Decimal","Binary");
+        if (!this._swap) {
+            this._converterView.swapConverter("Decimal","Binary");
+
+            this.swap = true;
         } else {
-            this._converterView.swapConverter(true, "Binary","Decimal");
+            this._converterView.swapConverter("Binary","Decimal");
+
+            this.swap = false;
         }
 
         this.clear();

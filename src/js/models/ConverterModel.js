@@ -1,19 +1,10 @@
 class ConverterModel {
 
-    constructor(value, isBinary) {
+    constructor(value) {
         this._value = value;
-        this._isBinary = isBinary;
     }
 
     getValue() {
-        if(this._isBinary) {
-            return parseInt(this._value, 2).toString();
-        } else {
-
-        }
-    }
-
-    getIsBinary() {
-        return this._isBinary;
+        return this._value;
     }
 }
